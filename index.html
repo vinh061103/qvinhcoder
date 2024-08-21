@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+
+</head>
+<body>
+    <div class="Quanlysinhvien">
+        <header class="header">
+               <header class="title">
+                <H1>QUẢN LÝ SINH VIÊN</H1>
+               </header>
+        </header>
+
+        <div class="container">
+                    <div class="form__group">
+                        <div class="form-number">
+                            <span class="form-number--label">MSSV:</span>
+                            <input type="text" id="mssv" placeholder="MSSV" maxlength="8" required>
+                        </div>
+                        <div class="form-number">
+                            <span class="form-number--label form-number--with" >Họ và tên:</span>
+                            <input type="text" id="name" placeholder="Họ và tên" required>        
+                        </div>
+
+                        <div class="form-number">
+                            <span class="form-number--label" >CMDN:</span>
+                            <input type="text" id="cmdn" placeholder="CMDN" maxlength="12" required pattern="[A-Za-z0-9]+">          
+                        </div>
+                    </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__sinhvien">
+            <button class="footer__sinhvien--hi">Thêm Sinh Viên</button>
+            <button class="footer__sinhvien--hi footer__sinhvien--update" >Cập nhật sinh viên</button>
+            <button class="footer__sinhvien--hi footer__sinhvien--erase">Xóa sinh viên</button>
+            </div>
+
+
+            <div class="list">
+                <h1>Danh Sách Sinh Viên</h1>
+                <table id="studentTable" class="table">
+                    <thead class="thead">
+                        <tr>
+                            <th>MSSV</th>
+                            <th>Họ và Tên</th>
+                            <th>CMDN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+             
+        </footer>
+    </div>
+</body>
+</html>
